@@ -1,4 +1,3 @@
-# Копирование артефакта из агента в директорию /tmp
 - name: "Get index.html from repozitory"
   hosts: all
   become: yes
