@@ -1,6 +1,7 @@
 - name: "Test playbook run"
   tasks:
-      copy:
-          src: ./index.html
-          dest: /opt/dockersite/
-          mode: 0775
+    - name: hz
+      ansible.builtin.copy:
+        src: ./index.html
+        dest: /opt/dockersite/
+        mode: 0775
