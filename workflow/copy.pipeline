@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') { // добавим новый Stage
             steps {
-                git branch: 'main', url: "git@github.com:kaurych/Pipeline-Ansible.git", credentialsId: 'github-ssh-key' 
+                git branch: 'main', url: "git@github.com:kaurych/jansible.git", credentialsId: 'github-ssh-key' 
             }
         }
         stage('Deploy') {
