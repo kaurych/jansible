@@ -4,9 +4,10 @@
   tasks:
       copy:
       - name: "Копируем"
-        src: ./index.html
-        dest: /opt/dockersite
-        mode: 0775
+        ansible.builtin.copy:
+          src: ./index.html
+          dest: /opt/dockersite
+          mode: 0775
       - name: "Debug"
         ansible.builtin.debug:
-        msg: "Получилось"
+          msg: "Получилось"
