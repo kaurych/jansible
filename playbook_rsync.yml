@@ -1,9 +1,10 @@
 - name: "Test playbook run"
   hosts: all
-  
+  become: true
   tasks:
       copy:
       - name: "Копируем"
         ansible.builtin.copy:
           src: ./index.html
           dest: /opt/dockersite/
+          mode: 0775
