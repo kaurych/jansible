@@ -1,8 +1,8 @@
-  # Копирование артефакта из агента в директорию /tmp
-  - name: "Get imdex.html from repozitory"
-    hosts: all
-    become: yes
-    tasks:
+# Копирование артефакта из агента в директорию /tmp
+- name: "Get imdex.html from repozitory"
+  hosts: all
+  become: yes
+  tasks:
       copy:
       - name: "Копируем"
         src: ./index.html
