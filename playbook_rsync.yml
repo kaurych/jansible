@@ -1,7 +1,13 @@
-- name: "Test playbook run"
+# Копирование артефакта из агента в директорию /tmp
+- name: "Get index.html from repozitory"
   hosts: all
-
+  become: yes
   tasks:
-   - name: "Debug"
-     ansible.builtin.debug:
-       msg: "Test debug"
+      copy:
+      - name: "Копируем"
+        src: ./index.html
+        dest: /opt/dockersite
+        mode: 0775
+      - name: "Debug"
+        ansible.builtin.debug:
+        msg: "Получилось"
