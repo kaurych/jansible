@@ -4,10 +4,10 @@
     become: yes
     tasks:
       copy:
-      - name: Копируем
+      - name: "Копируем"
         src: ./index.html
         dest: /opt/dockersite
         mode: 0775
       - name: "Debug"
         ansible.builtin.debug:
-        msg: Получилось
+        msg: "Получилось"
