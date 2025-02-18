@@ -1,5 +1,5 @@
 # Копирование артефакта из агента в директорию /tmp
-- name: "Get imdex.html from repozitory"
+- name: "Get index.html from repozitory"
   hosts: all
   become: yes
   tasks:
