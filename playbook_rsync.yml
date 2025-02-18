@@ -6,8 +6,4 @@
       - name: "Копируем"
         ansible.builtin.copy:
           src: ./index.html
-          dest: /opt/dockersite
-          mode: '0775'
-      - name: "Debug"
-        ansible.builtin.debug:
-          msg: "Получилось"
+          dest: /opt/dockersite/
