@@ -9,7 +9,7 @@ pipeline {
         }
         stage('Deploy') {
             steps {
-                   sh 'ansible-playbook playbook_rsync.yml -i hosts.ini'
+                   sh 'ansible-playbook playbook_rsync.yml'
                 }
             }
         }
