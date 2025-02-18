@@ -1,4 +1,4 @@
-- name: "Get index.html from repozitory"
+- name: "Test playbook run"
   hosts: all
   become: yes
   tasks:
