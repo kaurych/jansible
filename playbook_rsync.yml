@@ -1,4 +1,6 @@
 - name: "Test playbook run"
+  hosts: all
+  become: yes
   tasks:
     - name: hz
       ansible.builtin.copy:
