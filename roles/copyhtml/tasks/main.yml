@@ -1,8 +1,8 @@
 #Включаем роль
 - name: Процесс пошёл
-      copy:
-        src: ./index.html 
-        dest: /opt/dockersite/
-        mode: 0775
-      tags: 
-        - copy_easy
+  copy:
+    src: ./index.html 
+    dest: /opt/dockersite/
+    mode: 0775
+tags: 
+  - copy_easy
