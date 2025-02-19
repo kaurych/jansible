@@ -1,12 +1,5 @@
-#Копируем index.html в том докера
-- name: copy a file
+- name: "Test playbook run"
   hosts: localhost
   become: yes
-  tasks:
-    - name: Процесс пошёл
-      copy:
-        src: ./index.html 
-        dest: /opt/dockersite/
-        mode: 0775
-      tags: 
-        - copy_easy
+  roles:
+    - copyhtml
