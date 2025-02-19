@@ -8,5 +8,5 @@
         src: ./index.html 
         dest: /opt/dockersite/
         mode: 0775
-        tags: 
-          - copy_easy
+      tags: 
+        - copy_easy
