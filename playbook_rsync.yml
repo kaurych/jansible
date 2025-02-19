@@ -1,5 +1,7 @@
 - name: "Test playbook run"
   hosts: localhost
   become: yes
+  vars:
+    way_nginx: /opt/dockersite/
   roles:
     - copyhtml

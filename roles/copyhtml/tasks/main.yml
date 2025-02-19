@@ -3,5 +3,5 @@
 - name: Процесс пошёл
   copy:
     src: ./index.html 
-    dest: /opt/dockersite/
+    dest: {{ way_nginx }}
     mode: 0775
