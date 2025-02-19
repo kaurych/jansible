@@ -1,9 +1,9 @@
-- name: "Test playbook run"
+#Копируем index.html в том докера
+- name: copy a file
   hosts: localhost
   become: yes
   tasks:
-    - name: hz
-      ansible.builtin.copy:
-        src: ./index.html
-        dest: /opt/dockersite/
+    - name: Процесс пошёл
+        copy: src: ./index.html dest: /opt/dockersite/
         mode: 0775
+        tags: - copy_easy
