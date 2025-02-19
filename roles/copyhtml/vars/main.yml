@@ -1,0 +1,4 @@
+---
+# vars file for lib_storage
+#
+way_nginx: /opt/dockersite/
