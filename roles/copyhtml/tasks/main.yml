@@ -2,6 +2,6 @@
 #Включаем роль
 - name: Процесс пошёл
   copy:
-    src=./index.html 
-    dest={{ way_nginx }}
+    src: ./index.html 
+    dest: "{{ way_nginx }}"
     mode: 0775
